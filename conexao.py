@@ -1,7 +1,9 @@
 import psycopg2
+from dontenv import load_dotenv
+import os
 
 def get_conexao():
-    conn = psycopg2.connect(
+    conn =psycopg2.connect(
         dbname='postgres',
         user='postgres.royfkjapbmqrdoprlydy',
         password='CapivariIfsp',
