@@ -1,5 +1,5 @@
 import psycopg2
-from dontenv import load_dotenv
+from dotenv import load_dotenv
 import os
 
 def get_conexao():
