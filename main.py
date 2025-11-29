@@ -10,5 +10,10 @@ def hello_world():
   name = os.environ.get("NAME", "World")
   return f"Hello {name}!"
 
+@app.route("/cardapio")
+def cardapio_route():
+  cardapio = get_cardapio()
+  return cardapio
+  
 if __name__ == "__main__":
   app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 3000)))
